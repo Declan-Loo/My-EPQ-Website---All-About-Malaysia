@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+	<!-- !Head must be the same for all web pages in this project-->
+	<!-- Make sure to use this example for the website.-->
+    <head>
+        <title>Explore Malaysia - All About Malaysia</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- ! CSS styles go here-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"><!-- !To access the Bootstrap library for grid/layout system,etc.-->
+		<link rel="stylesheet" href="styles/style.css"> <!--! To access the CSS for the stylesheet -->
+        <link rel="stylesheet" href="styles/menu.css"> <!-- ! To access the CSS for the menu function -->
+		<link rel="stylesheet" href="styles/normalize.css"> <!-- ! Normalize.css makes browsers render all elements more consistently and in line with modern standards. It precisely targets only the styles that need normalizing. (link: https://necolas.github.io/normalize.css/)-->
+        <link rel="stylesheet" href="styles/button.css"> <!-- !To access the CSS for the button function -->
+		<link rel="stylesheet" href="styles/slideshow.css"> <!-- !To access the CSS for the slideshow function -->
+		<link rel="stylesheet" href="styles/covid-button-link.css"> <!-- !To access the CSS for the slideshow function -->
+		<link rel="stylesheet" href="styles/searchButton.css"> <!-- !To access the CSS for the search button function -->
+		<link rel="stylesheet" href="styles/search.css"> <!-- !To access the CSS for the search box (in the side navigation menu) -->
+		<link href="https://css.gg/search.css" rel="stylesheet"> <!-- !To access the CSS for the search icon -->
+
+		<!-- !Favicon icon (icon at the top of the page) -->
+		<link rel="icon" href="favicon.ico" sizes="any" type="image/x-icon">
+    </head>
+    <body>
+		<!-- !To access the sidebar menu on the top right of the page -->
+		<div id="navbar" class="sidenav" onclick="event.stopPropagation();"> <!-- The Menu Section-->
+			<!-- !Button to close the sidebar navigation-->
+			<a href="javascript:void(0)" class="closeButton" onclick="closeNav();">&times;</a>
+			<div class = "sidenavContent">
+				<a href="about-this-website.html">About this Website</a> <!-- !Introduce the website to readers-->
+				<a href="about-malaysia.html">About Malaysia</a> <!-- !Tells readers about what Malaysia is, and how it is unique to other countries around the world-->
+				<a href="explore-malaysia.html">Explore Malaysia</a> <!-- !Talk about the cities/etc.-->
+				<a href="things-to-do.html">Things to Do</a> <!-- !Tells readers about activities to do in Malaysia-->
+				
+				<!-- !Search Button, so people can input anything they want from the side navigation menu-->
+				<div class="input-group">
+					<form action="search.html" method="get">
+						<input required="" type="text" name="text" autocomplete="off" class="input">
+						<label class="user-label">Search Here</label>
+					</form>
+				</div>
+				<a href="epq-references.html">References</a> <!-- !Put the cited information (completely in Harvard style), as reference to show evidence of research on my website project/information-->
+			</div>
+			<script type="text/javascript" src="sidenavbar.js" ></script> <!-- !Link the Javascript file into the website-->
+		</div>
+
+		<!-- !For the navigation bar at the top of the page-->
+		<header>
+			<a href="index.html"><img src="images/ALL ABOUT MALAYSIA LOGO.png" alt="All About Malaysia"></a> <!-- !All ABOUT MALAYSIA LOGO-->
+			<!-- * HTML Navigation (the navigation bar) contents-->
+			<nav>
+				<ul>
+					<li><a href="about-malaysia.html" class="hiddenIfScreenSmall hover-underline-animation" >About Malaysia</a></li> <!-- !Tells readers about what Malaysia is, and how it is unique to other countries around the world-->
+					<li><a href="explore-malaysia.html" class="hiddenIfScreenSmall hover-underline-animation">Explore Malaysia</a></li> <!-- !Talk about the cities/etc.-->
+					<li><a href="things-to-do.html" class="hiddenIfScreenSmall hover-underline-animation">Things to Do</a></li><!-- !Tells readers about activities to do in Malaysia-->
+					<li><span id="sideButton" style="font-size:30px;cursor:pointer;" onclick="openNav(event)">&#9776</span></li> <!-- !Opens the side navigation bar (for mobile or smaller screens) - gets access to more tabs e.g. about the website, epq references, another search bar, etc.-->
+				</ul>
+			</nav>
+		</header>
+		<!-- !End of MUST ADD CONTENT-->
+
+		<!-- ? Content of the page go here! -->
+		<!-- ? Can be either container-fluid (width=100%) or container (width to be 70-80%) for easier viewing.-->
+        <div class="container">
+            <main>
+                <!-- TODO Your code here  -->
+				<div class="MalaysiaMap">
+					<!-- Map found in https://www.worldatlas.com/maps/malaysia-->
+					<img src="images/states-and-territories-of-malaysia-map.png" alt="Map of Malaysia with States and Territories" style="width: 100%"/>
+					<p>(Map is taken from <a href="https://www.worldatlas.com/maps/malaysia">https://www.worldatlas.com/maps/malaysia</a>)</p>
+				</div>
+				<br>
+				<hr>
+				<h1 style="text-align: center">MAJOR CITIES</h1>
+				<div class ="container px-4">
+					<div class="row gx-3">
+						<div class="col-6">
+							<a href="kuala-lumpur.html"><h2 style="text-align: left">KUALA LUMPUR</h2></a>
+							<p>The capital city of Malaysia and home to the tallest twin towers in the world. Its meaning in English is "muddy estuary". It is the commercial, cultural and transportation hub of Malaysia.</p>
+						</div>
+						<div class="col-6">
+							<a href="penang.html"><h2 style="text-align: right;">PENANG</h2></a>
+							<p>Listed as a UNESCO World Heritage Site. It is recognised as Malaysia's Food Capital. Popular for its outstanding street art and rich history as a British commercial port. It is a city with a wide range of cultural influences.							</p>
+						</div>
+					</div>
+					<br>
+					<div class="row gx-3">
+						<div class="col-6">
+							<a href="langkawi.html"><h2 style="text-align: left">LANGKAWI</h2></a>
+							<p>An island in the state of Kedah, just west off the coastline. It is the oldest land in Malaysia, dating from 550 million years ago. It is a designated UNESCO World Geopark since 2007.</p>
+						</div>
+						<div class="col-6">
+							<a href="melaka.html"><h2 style="text-align: right;">MELAKA</h2></a>
+							<p>Listed as a UNESCO World Heritage Site, along with Penang, since 2008. Founded in the late 14th century, Melaka would be colonised by the Portuguese in 1511, then the Dutch in 1641, and eventually the British in 1824. It was one of the Strait Settlements that were directly ruled by the British.</p>
+						</div>
+					</div>
+				</div>
+				<br>
+				<hr>
+				<h1 style="text-align:center;">POPULAR TOURIST ATTRACTIONS</h1>
+				<div class ="container px-4">
+					<div class="row gx-3">
+						<div class="col-6">
+							<h2 style="text-align: left">GUNUNG MULU NATIONAL PARK</h2>
+							<p><strong>A UNESCO World Heritage Site located in Sarawak.</strong> Gunung Mulu National Park has limestone karst and massive cave formations. The site is surrounded by three mountains: Gunung Api, Gunung Benerat, and Gunung Buda, which are limestone mountains. Meanwhile, Gunung Mulu, which the site is named after, is a sandstone mountain. <br><br>The limestone was formed by the pressure of two crushing land plates for 20 million years and the deposition of rain and groundwater, respectively. The rainwater and groundwater caused limestone erosion, resulting in cave systems like chambers, underground rivers, and speleothems, only found in tropical areas. Gunung Mulu is also home to a variety of flora and fauna.</p>
+							<a href="https://mulupark.com/"><strong><p>Click here for more information</p></strong></a>
+						</div>
+						<div class="col-6">
+							<h2 style="text-align: right;">SIPADAN ISLAND</h2>
+							<p>Regarded as one of the top places to go diving in the world. There are 12 different dive spots around the island. It is the only oceanic island in Malaysia. Sipadan is known for having a lot of green and hawksbill turtles, which mate on the island. There are also at least three thousand different fish species and hundreds of coral species found in the area. The island is also covered by jungle, and home to tropical birds.</p>
+						</div>
+					</div>
+					<br>
+					<div class="row gx-3">
+						<div class="col-12">
+							<h2 style="text-align: left">MOUNT KINABALU</h2>
+							<img src="images/ryan-o-niel-ywQLwGDrrZY-unsplash.jpg" style='width:80%;height:auto;'/>
+							<p>Mount Kinabalu is a UNESCO World Heritage Site, located in Sabah. With an altitude at 4,095m (13,465 ft) above sea level, it is Malaysia’s highest peak. The mountain can be scaled via an 8.8km trek, taking two days and one night to complete, both up and down the mountain, with a midnight stay at the mountain huts. The mountain is scalable for anybody, fit and healthy. Kinabalu Park is the site that surrounds the mountain. <br><br>With over five thousand different plant species, originating from the Himalayan, Australasian, and Indo-Malaysian regions, it is regarded as one of the most significant biodiversity sites in the world. There is a variety of activities you can do at Kinabalu Park including trekking, hiking, camping, watching wildlife, plant spotting and photography!</p>
+							<a href="https://www.mountkinabalu.com/"><strong><p>Click here for more information</p></strong></a>
+						</div>
+					</div>
+				</div>
+				<br>
+            </main>
+        </div> 
+		<script type="text/javascript" src="script.js" ></script> 
+    </body>
+</html>

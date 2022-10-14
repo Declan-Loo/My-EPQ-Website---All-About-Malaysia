@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+	<!-- !Head must be the same for all web pages in this project-->
+	<!-- Make sure to use this example for the website.-->
+    <head>
+        <title>References - All About Malaysia</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- ! CSS styles go here-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"><!-- !To access the Bootstrap library for grid/layout system,etc.-->		
+		<link rel="stylesheet" href="styles/style.css"> <!--! To access the CSS for the stylesheet -->
+        <link rel="stylesheet" href="styles/menu.css"> <!-- ! To access the CSS for the menu function -->
+		<link rel="stylesheet" href="styles/normalize.css"> <!-- ! Normalize.css makes browsers render all elements more consistently and in line with modern standards. It precisely targets only the styles that need normalizing. (link: https://necolas.github.io/normalize.css/)-->
+        <link rel="stylesheet" href="styles/button.css"> <!-- !To access the CSS for the button function -->
+		<link rel="stylesheet" href="styles/searchButton.css"> <!-- !To access the CSS for the search button function -->
+		<link rel="stylesheet" href="styles/search.css"> <!-- !To access the CSS for the search box (in the side navigation menu) -->
+		<link rel="stylesheet" href="styles/epq-references.css"> <!-- *Style for the citation -->
+		<link href="https://css.gg/search.css" rel="stylesheet"> <!-- !To access the CSS for the search icon -->
+
+		<!-- !Favicon icon (icon at the top of the page) -->
+		<link rel="icon" href="favicon.ico" sizes="any" type="image/x-icon">
+    </head>
+    <body>
+		<!-- !To access the sidebar menu on the top right of the page -->
+		<div id="navbar" class="sidenav" onclick="event.stopPropagation();"> <!-- The Menu Section-->
+			<!-- !Button to close the sidebar navigation-->
+			<a href="javascript:void(0)" class="closeButton" onclick="closeNav();">&times;</a>
+			<div class = "sidenavContent">
+				<a href="about-this-website.html">About this Website</a> <!-- !Introduce the website to readers-->
+				<a href="about-malaysia.html">About Malaysia</a> <!-- !Tells readers about what Malaysia is, and how it is unique to other countries around the world-->
+				<a href="explore-malaysia.html">Explore Malaysia</a> <!-- !Talk about the cities/etc.-->
+				<a href="things-to-do.html">Things to Do</a> <!-- !Tells readers about activities to do in Malaysia-->
+				
+				<!-- !Search Button, so people can input anything they want from the side navigation menu-->
+				<div class="input-group">
+					<form action="search.html" method="get">
+						<input required="" type="text" name="text" autocomplete="off" class="input">
+						<label class="user-label">Search Here</label>
+					</form>
+				</div>
+				<a href="epq-references.html">References</a> <!-- !Put the cited information (completely in Harvard style), as reference to show evidence of research on my website project/information-->
+			</div>
+			<script type="text/javascript" src="script.js" ></script> <!-- !Link the Javascript file into the website-->
+		</div>
+
+		<!-- !For the navigation bar at the top of the page-->
+		<header>
+			<a href="index.html"><img src="images/ALL ABOUT MALAYSIA LOGO.png" alt="All About Malaysia"></a> <!-- !All ABOUT MALAYSIA LOGO-->
+			<!-- * HTML Navigation (the navigation bar) contents-->
+			<nav>
+				<ul>
+					<li><a href="about-malaysia.html" class="hiddenIfScreenSmall hover-underline-animation">About Malaysia</a></li> <!-- !Tells readers about what Malaysia is, and how it is unique to other countries around the world-->
+					<li><a href="explore-malaysia.html" class="hiddenIfScreenSmall hover-underline-animation">Explore Malaysia</a></li> <!-- !Talk about the cities/etc.-->
+					<li><a href="things-to-do.html" class="hiddenIfScreenSmall hover-underline-animation">Things to Do</a></li><!-- !Tells readers about activities to do in Malaysia-->
+					<li><span id="sideButton" style="font-size:30px;cursor:pointer;" onclick="openNav(event)">&#9776</span></li> <!-- !Opens the side navigation bar (for mobile or smaller screens) - gets access to more tabs e.g. about the website, epq references, another search bar, etc.-->
+				</ul>
+			</nav>
+		</header>
+        <!-- !End of MUST ADD CONTENT--> 
+
+        <div class="container">
+            <main>
+				<h2>These are the resources that I have used to populate the website (cited in Harvard format)</h2>
+				<br>
+				<h3 style="font-family:Times New Roman; text-align: center; font-size: 20pt; font-weight: bold;">Reference List</h3>
+
+				<!-- !Citation List for referencing-->
+                <p>
+					Alkhnaifer, A. (2020). <cite>Kilim Geoforest Park.</cite> [image] <cite>Unsplash.</cite> Available at: < https://unsplash.com/photos/6tpE45AjeL8> [Accessed 14 June 2022].<br><br>
+					Arunoprayote, S. (2020). <cite></cite>Cheong Fatt Tze Mansion (I). [image] <cite>Wikimedia Commons.</cite> Available at: < https://commons.wikimedia.org/wiki/File:Cheong_Fatt_Tze_Mansion_(I).jpg> [Accessed 13 June 2022].<br><br>
+					Bearmax (2020). <cite>Green Trees on White Sand Beach.</cite> [image] <cite>Pexels.</cite> Available at: < https://www.pexels.com/photo/green-trees-on-white-sand-beach-3960199/> [Accessed 9 June 2022].<br><br>
+					Bowden, D. (2019a). <cite>Enchanting Langkawi.</cite> 2nd ed. Oxford: John Beaufoy Publishing Limited, pp.4,6.<br><br>
+					Bowden, D. (2019b). <cite>Enchanting Penang.</cite> 2nd ed. Oxford: John Beaufoy Publishing Limited, pp.8–11, 18, 48, 58.<br><br>
+					Britannica, T.E. of E. (2021). <cite>Kuala Lumpur | History, Population, & Facts.</cite> [online] Encyclopedia Britannica. Available at: < https://www.britannica.com/place/Kuala-Lumpur> [Accessed 12 Jun. 2022].<br><br>
+					Calderon, J. (2021). <cite>Malaysia’s Top 40 Foods.</cite> [online] CNN Travel. Available at: < https://edition.cnn.com/travel/article/malaysian-food/index.html> [Accessed 6 June 2022].<br><br>
+					Cheong Fatt Tze - The Blue Mansion (2022). <cite>History | Cheong Fatt Tze’s Blue Mansion - Georgetown Heritage Hotel</cite>. [online] Cheong Fatt Tze - The Blue Mansion. Available at: < https://www.cheongfatttzemansion.com/about-the-mansion/history/> [Accessed 13 June 2022].<br><br>
+					Department of Statistics Malaysia (2021). <cite>Current Population Estimates, Malaysia, 2021.</cite> [online] Department of Statistics Malaysia Official Portal. Available at: < https://www.dosm.gov.my/v1/index.php?r=column/cthemeByCat&cat=155&bul_id=ZjJOSnpJR21sQWVUcUp6ODRudm5JZz09&menu_id=L0pheU43NWJwRWVSZklWdzQ4TlhUUT09> [Accessed 30 January 2022].<br><br>
+					<cite>Federal Constitution of Malaysia</cite> (1957) Part I, II, IV, Article 1,3, 11, 32-39, Third Schedule, Fifth Schedule. Available at: < http://www.commonlii.org/my/legis/const/1957/> [Accessed 5 June 2022].<br><br>
+					Glitterly.app (2021). <cite></cite>Mount Kinabalu, Ranau, Sabah, Malaysia. [image] <cite>Unsplash.</cite> Available at: < https://unsplash.com/photos/ebyHe676VV8> [Accessed 9 June 2022].<br><br>
+					Google (2022). Malaysia. [online] Malaysia - Google Maps. Available at: < https://www.google.com/maps/place/Malaysia/> [Accessed 6 June 2022].<br><br>
+					Kerajaan Negeri Melaka (n.d.). <cite>Jonker Walk.</cite> [information sign]. [Viewed 12 March 2022].<br><br>
+					Kerajaan Negeri Melaka (n.d.). <cite>Melaka Under British Rule.</cite> [information sign]. [Viewed 12 March 2022].<br><br>
+					Kerajaan Negeri Melaka (n.d.). <cite>Melaka Under Dutch Rule.</cite> [information sign]. [Viewed 12 March 2022].<br><br>
+					Kerajaan Negeri Melaka (n.d.). <cite>Palace of the Melaka Sultanate.</cite> [information sign]. [Viewed 12 March 2022].<br><br>
+					Kerajaan Negeri Melaka (n.d.). <cite>Porta de Santiago.</cite> [information sign]. [Viewed 12 March 2022].<br><br>
+					Kerajaan Negeri Melaka (n.d.). <cite>Portuguese Invasion of Melaka.</cite> [information sign]. [Viewed 12 March 2022].<br><br>
+					Kerajaan Negeri Melaka (n.d.). <cite>St. Paul’s Hill.</cite> [information sign]. [Viewed 12 March 2022].<br><br>
+					Kerajaan Negeri Melaka (n.d.). <cite>The Dutch Invasion of Melaka.</cite> [information sign]. [Viewed 12 March 2022].<br><br>
+					Kerajaan Negeri Melaka (n.d.). <cite>The Portuguese Invasion of Melaka.</cite> [information sign]. [Viewed 12 March 2022].<br><br>
+					Langkawi Development Authority (2021). <cite>About Langkawi - Naturally Langkawi.</cite> [online] Naturally Langkawi. Available at: < https://naturallylangkawi.my/about-langkawi/> [Accessed 12 June 2022].<br><br>
+					Langkawi Geopark (n.d.). <cite>Our Four Wonders – Langkawi Geopark.</cite> [online] Langkawi Geopark. Available at: < https://langkawigeopark.com.my/geoforest-park/> [Accessed 15 June 2022].<br><br>
+					Lee, J. (2021). <cite>Golden Statue in Batu Caves Malaysia.</cite> [image] <cite>Pexels.</cite> Available at: < https://www.pexels.com/photo/golden-statue-in-batu-caves-malaysia-9908248/> [Accessed 9 June 2022].<br><br>
+					Lim, A. (2021). <cite>Curry Laksa Noodles.</cite> [image] <cite>Unsplash.</cite> Available at: < https://unsplash.com/photos/xvAaSlU-zpM> [Accessed 11 June 2022].
+					Lockhard, C.A., Ahmad, Z.B., Bee, O.J. and Leinbach, T.R. (2022a). <cite>Malaysia - History | Britannica.</cite> [online] Encyclopedia Britannica. Available at: < https://www.britannica.com/place/Malaysia/History> [Accessed 5 June 2022].<br><br>
+					Lockhard, C.A., Ahmad, Z.B., Bee, O.J. and Leinbach, T.R. (2022b). <cite>Malaysia.</cite> [online] Encyclopedia Britannica. Available at: < https://www.britannica.com/place/Malaysia> [Accessed 5 June 2022].<br><br>
+					MapGrid (1963). <cite>Flag of Malaysia.</cite> [image]. <cite>Wikipedia.</cite> Available at: < https://en.m.wikipedia.org/wiki/File:Flag_of_Malaysia.svg> [Accessed 20 May 2022].<br><br>
+					Melaka Historic City Council (2022). <cite>Melaka City Info.</cite> [online] Official Portal of Melaka Historic City Council (MBMB). Available at: < https://www.mbmb.gov.my/en/tourism/melaka-city-info> [Accessed 13 June 2022].<br><br>
+					MyGovernment (2017). <cite>MyGOV - Malaysia Information  |  Summary Of Malaysia’s History.</cite> [online] MyGovernment. Available at: < https://www.malaysia.gov.my/portal/content/30120> [Accessed 14 May 2022].<br><br>
+					Nou, S. (2020). <cite>Cameron Highlands.</cite> [image] <cite>Unsplash.</cite> Available at: < https://unsplash.com/photos/DY2EFjpMnz0> [Accessed 9 June 2022].<br><br>
+					Rie, P. (2021). <cite>Aerial Shot of Crashing Waves on the Shore.</cite> [image] <cite>Pexels.</cite> Available at: < https://www.pexels.com/photo/aerial-shot-of-crashing-waves-on-the-shore-7266330/> [Accessed 9 June 2022].<br><br>
+					Oliver (2019). <cite>Tasik Dayang Bunting at Langkawi.</cite> [image] <cite>Unsplash.</cite> Available at: < https://unsplash.com/photos/vrmumizr3B0> [Accessed 14 June 2022].<br><br>
+					Oon, H. (2016). <cite>Globetrotter Travel Guide - Malaysia. 9th ed.</cite> Cape Town: MapStudio, pp. 45-46, 53, 80.<br><br>
+					Petronas Twin Towers. (2022). <cite>Design and Structures | The Towers | PETRONAS Twin Towers.</cite>. [online] Available at: < https://www.petronastwintowers.com.my/design-and-structures/> [Accessed 1 June 2022].<br><br>
+					Sehgal, A.N. (2019). <cite>Langkawi Sky Bridge.</cite> [image] <cite>Unsplash.</cite> Available at: < https://unsplash.com/photos/uIFH089ea0g> [Accessed 14 June 2022].<br><br>
+					Tourism Malaysia (2022). <cite>Malaysia Truly Asia - Official Website of Tourism Malaysia.</cite> [online] Malaysia.Travel. Available at: < https://www.malaysia.travel/travel-alert?date=2022-04-28> [Accessed 1 June 2022].<br><br>
+					Travel, T.S. (2021a). <cite>Christ Church Melaka.</cite> [image] <cite>Unsplash.</cite> Available at: < https://unsplash.com/photos/EORcMeCga9A> [Accessed 13 June 2022].<br><br>
+					Travel, T.S. (2021b). <cite>Jonker Street.</cite> [image] <cite>Unsplash.</cite> Available at: < https://unsplash.com/photos/QGGb1nXsXQE> [Accessed 13 June 2022].<br><br>
+					Vermeulen, J. (2015). <cite>Langkawi.</cite> [image] <cite>Unsplash.</cite> Available at: < https://unsplash.com/photos/LbjcsNneKCY> [Accessed 9 June 2022].<br><br>
+					WorldAtlas (2021). <cite>States and Federal Territories Map of Malaysia.</cite> [image] <cite>WorldAtlas.</cite> Available at: < https://www.worldatlas.com/upload/2d/a2/4c/states-and-territories-of-malaysia-map.png> [Accessed 6 June 2022].<br><br>
+					Yong, E. (2020). <cite>Sunset view from Trader’s Hotel towards KLCC.</cite> [image] <cite>Unsplash.</cite> Available at: < https://unsplash.com/photos/-9B08uduMyY> [Accessed 9 June 2022].<br><br>
+					Yong, Y. (2020b). <cite>brown and gray concrete wall with brown wooden door photo.</cite>[image] <cite>Unsplash.</cite> Available at: < https://unsplash.com/photos/s6HogbQTeNE> [Accessed 12 June 2022].<br><br>
+					Zakaria, F. (2015). <cite>Food Nasi Lemak Asia.</cite> [image] <cite></cite>Pixabay. Available at: < https://pixabay.com/photos/food-nasi-lemak-asia-malaysia-658715/> [Accessed 11 June 2022].<br><br>
+					Zheng, F. (2018). <cite>Penang Hill.</cite> [image] <cite>Unsplash.</cite> Available at: < https://unsplash.com/photos/wlyiPNaTobo> [Accessed 9 June 2022].
+				</p>
+				<br>
+            </main>
+        </div>  
+    </body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+	<!-- !Head must be the same for all web pages in this project-->
+	<!-- Make sure to use this example for the website.-->
+    <head>
+        <title>Melaka - All About Malaysia</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- ! CSS styles go here-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"><!-- !To access the Bootstrap library for grid/layout system,etc.-->
+		<link rel="stylesheet" href="styles/style.css"> <!--! To access the CSS for the stylesheet -->
+        <link rel="stylesheet" href="styles/menu.css"> <!-- ! To access the CSS for the menu function -->
+		<link rel="stylesheet" href="styles/normalize.css"> <!-- ! Normalize.css makes browsers render all elements more consistently and in line with modern standards. It precisely targets only the styles that need normalizing. (link: https://necolas.github.io/normalize.css/)-->
+        <link rel="stylesheet" href="styles/button.css"> <!-- !To access the CSS for the button function -->
+		<link rel="stylesheet" href="styles/searchButton.css"> <!-- !To access the CSS for the search button function -->
+		<link rel="stylesheet" href="styles/search.css"> <!-- !To access the CSS for the search box (in the side navigation menu) -->
+		<link href="https://css.gg/search.css" rel="stylesheet"> <!-- !To access the CSS for the search icon -->
+
+		<!-- !Favicon icon (icon at the top of the page) -->
+		<link rel="icon" href="favicon.ico" sizes="any" type="image/x-icon">
+
+    </head>
+    <body>
+		<!-- !To access the sidebar menu on the top right of the page -->
+		<div id="navbar" class="sidenav" onclick="event.stopPropagation();"> <!-- The Menu Section-->
+			<!-- !Button to close the sidebar navigation-->
+			<a href="javascript:void(0)" class="closeButton" onclick="closeNav();">&times;</a>
+			<div class = "sidenavContent">
+				<a href="about-this-website.html">About this Website</a> <!-- !Introduce the website to readers-->
+				<a href="about-malaysia.html">About Malaysia</a> <!-- !Tells readers about what Malaysia is, and how it is unique to other countries around the world-->
+				<a href="explore-malaysia.html">Explore Malaysia</a> <!-- !Talk about the cities/etc.-->
+				<a href="things-to-do.html">Things to Do</a> <!-- !Tells readers about activities to do in Malaysia-->
+				
+				<!-- !Search Button, so people can input anything they want from the side navigation menu-->
+				<div class="input-group">
+					<form action="search.html" method="get">
+						<input required="" type="text" name="text" autocomplete="off" class="input">
+						<label class="user-label">Search Here</label>
+					</form>
+				</div>
+				<a href="epq-references.html">References</a> <!-- !Put the cited information (completely in Harvard style), as reference to show evidence of research on my website project/information-->
+			</div>
+			<script type="text/javascript" src="script.js" ></script> <!-- !Link the Javascript file into the website-->
+		</div>
+
+		<!-- !For the navigation bar at the top of the page-->
+		<header>
+			<a href="index.html"><img src="images/ALL ABOUT MALAYSIA LOGO.png" alt="All About Malaysia"></a> <!-- !All ABOUT MALAYSIA LOGO-->
+			<!-- * HTML Navigation (the navigation bar) contents-->
+			<nav>
+				<ul>
+					<li><a href="about-malaysia.html" class="hiddenIfScreenSmall hover-underline-animation" >About Malaysia</a></li> <!-- !Tells readers about what Malaysia is, and how it is unique to other countries around the world-->
+					<li><a href="explore-malaysia.html" class="hiddenIfScreenSmall hover-underline-animation">Explore Malaysia</a></li> <!-- !Talk about the cities/etc.-->
+					<li><a href="things-to-do.html" class="hiddenIfScreenSmall hover-underline-animation">Things to Do</a></li><!-- !Tells readers about activities to do in Malaysia-->
+					<li><span id="sideButton" style="font-size:30px;cursor:pointer;" onclick="openNav(event)">&#9776</span></li> <!-- !Opens the side navigation bar (for mobile or smaller screens) - gets access to more tabs e.g. about the website, epq references, another search bar, etc.-->
+				</ul>
+			</nav>
+		</header>
+		<!-- !End of MUST ADD CONTENT-->
+
+		<!-- ? Content of the page go here! -->
+		<!-- ? Can be either container-fluid (width=100%) or container (width to be 70-80%) for easier viewing.-->
+        <div class="container">
+            <main>
+                <!-- TODO Your code here  -->
+				<h1>ABOUT MELAKA</h1>
+                <p>Malacca (Melaka in Malay) is a UNESCO World Heritage Site, along with Penang. It was founded in the late 14th century by Paramswera. Legend has said that Parameswara named the town Melaka after a tree he was leaning on. The founding gave rise to the Malacca Sultanate. During that period, a palace was built in Bukit Melaka, where Sultanate reigned over the region. Malacca became a trading port due to its strategic location along the Straits of Malacca. It was also the eastern end of the Indian Ocean trading routes. Resources like silk and porcelain from China, cloths from India, camphor from Borneo, nutmeg and cloves from the Moluccas, sandalwood from the East, and tin from Malaya, were available in Malacca.<br><br>
+					However, the Portuguese invaded and colonised Malacca in 1511. They set their administrative centre at Bukit Melaka and constructed the now-called St. Paul’s Church and the fortress A’Famosa.<br><br>
+					In 1641, the Dutch defeated the Portuguese in their conquest of Malacca and later colonised Malacca as the Dutch East Indies Company (VOC). As a result of the Anglo-Dutch Treaty, Malacca was officially handed over to the British in 1824, causing the start of British colonisation in Malacca. It would soon be directly ruled by the British as part of the Strait Settlements. 
+                </p>
+				<hr>
+                <h1>PLACES TO GO</h1>
+				<h2>A'Famosa Fortress</h2>
+                <div class ="container px-4">
+                    <div class="row gx-3">
+                        <div class="col-3">
+                            <img src="images/IMG_6659.jpg" style="width:100%;height:auto;" alt="A'Famosa"/>
+                            <br>
+                        </div>
+                        <div class="col-9">
+                            <p>A fort built by the Portuguese in 1512 to protect against attacks from Johor, those who followed Sultan Mahmud Shah, and the Acheh Sultanate. The only thing that is still standing is the Porta de Santiago, which is one of the main entrances to the fortress. During the Dutch rule, it would be refurbished. But the British blew up the fortress in 1807, leaving only the Porta de Santiago and a few houses around it standing, as they were worried about the Dutch’s influence in Malacca with the fortress present. At the time, the British were temporarily in charge of Malacca.
+							</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+				<h2>Jonker Walk</h2>
+                <div class ="container px-4">
+                    <div class="row gx-3">
+                        <div class="col-9">
+                            <p>A place where antiques are sold. There are also restaurants and many other stores located on Jonker Walk. A night market also happens every Friday, Saturday, and Sunday night.
+							</p>
+                        </div>
+						<div class="col-3">
+                            <img src="images/the-simple-travel-QGGb1nXsXQE-unsplash.jpg" style="width:100%;height:auto;" alt="Jonker Walk"/>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <br>
+				<h2>St. Paul's Church</h2>
+                <div class ="container px-4">
+                    <div class="row gx-3">
+                        <div class="col-3">
+                            <img src="images/IMG_6626.jpg" style="width:100%;height:auto;"/>
+                            <br>
+                        </div>
+                        <div class="col-9">
+                            <p>Both A'Famosa and the church were built by the Portuguese on Bukit Melaka (Melaka Hill). The church was called “Nossa Senhora do Outeiro”, which meant Our Lady of the Hill. After the palace built by the Malacca Sultanate was destroyed, the fortress and church was constructed on that site. It used to be a Catholic church, but when the Dutch took over Malacca, it became a Protestant church. But the church was badly damaged, so it was rebuilt and given a new name: St. Paul's Church. The Dutch built the new Christ Church, so St. Paul's Church became a place where Dutch nobles were buried.
+							</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+				<h2>Dutch Square</h2>
+                <div class ="container px-4">
+                    <div class="row gx-3">
+                        <div class="col-9">
+                            <p>Under Dutch rule, Stadthuys, which means "city hall," was the centre of Malacca's government and where the Dutch governor lived. Later, the Dutch built Christ Church, which is a Protestant church that was built in 1753.
+							</p>
+                        </div>
+						<div class="col-3">
+                            <img src="images/the-simple-travel-EORcMeCga9A-unsplash.jpg" style="width:100%;height:auto;"/>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </main>
+        </div> 
+		<script type="text/javascript" src="script.js" ></script> 
+    </body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+	<!-- !Head must be the same for all web pages in this project-->
+	<!-- Make sure to use this example for the website.-->
+    <head>
+        <title>Kuala Lumpur - All About Malaysia</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- ! CSS styles go here-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"><!-- !To access the Bootstrap library for grid/layout system,etc.-->
+		<link rel="stylesheet" href="styles/style.css"> <!--! To access the CSS for the stylesheet -->
+        <link rel="stylesheet" href="styles/menu.css"> <!-- ! To access the CSS for the menu function -->
+		<link rel="stylesheet" href="styles/normalize.css"> <!-- ! Normalize.css makes browsers render all elements more consistently and in line with modern standards. It precisely targets only the styles that need normalizing. (link: https://necolas.github.io/normalize.css/)-->
+        <link rel="stylesheet" href="styles/button.css"> <!-- !To access the CSS for the button function -->
+		<link rel="stylesheet" href="styles/searchButton.css"> <!-- !To access the CSS for the search button function -->
+		<link rel="stylesheet" href="styles/search.css"> <!-- !To access the CSS for the search box (in the side navigation menu) -->
+		<link href="https://css.gg/search.css" rel="stylesheet"> <!-- !To access the CSS for the search icon -->
+
+		<!-- !Favicon icon (icon at the top of the page) -->
+		<link rel="icon" href="favicon.ico" sizes="any" type="image/x-icon">
+
+    </head>
+    <body>
+		<!-- !To access the sidebar menu on the top right of the page -->
+		<div id="navbar" class="sidenav" onclick="event.stopPropagation();"> <!-- The Menu Section-->
+			<!-- !Button to close the sidebar navigation-->
+			<a href="javascript:void(0)" class="closeButton" onclick="closeNav();">&times;</a>
+			<div class = "sidenavContent">
+				<a href="about-this-website.html">About this Website</a> <!-- !Introduce the website to readers-->
+				<a href="about-malaysia.html">About Malaysia</a> <!-- !Tells readers about what Malaysia is, and how it is unique to other countries around the world-->
+				<a href="explore-malaysia.html">Explore Malaysia</a> <!-- !Talk about the cities/etc.-->
+				<a href="things-to-do.html">Things to Do</a> <!-- !Tells readers about activities to do in Malaysia-->
+				
+				<!-- !Search Button, so people can input anything they want from the side navigation menu-->
+				<div class="input-group">
+					<form action="search.html" method="get">
+						<input required="" type="text" name="text" autocomplete="off" class="input">
+						<label class="user-label">Search Here</label>
+					</form>
+				</div>
+				<a href="epq-references.html">References</a> <!-- !Put the cited information (completely in Harvard style), as reference to show evidence of research on my website project/information-->
+			</div>
+			<script type="text/javascript" src="script.js" ></script> <!-- !Link the Javascript file into the website-->
+		</div>
+
+		<!-- !For the navigation bar at the top of the page-->
+		<header>
+			<a href="index.html"><img src="images/ALL ABOUT MALAYSIA LOGO.png" alt="All About Malaysia"></a> <!-- !All ABOUT MALAYSIA LOGO-->
+			<!-- * HTML Navigation (the navigation bar) contents-->
+			<nav>
+				<ul>
+					<li><a href="about-malaysia.html" class="hiddenIfScreenSmall hover-underline-animation" >About Malaysia</a></li> <!-- !Tells readers about what Malaysia is, and how it is unique to other countries around the world-->
+					<li><a href="explore-malaysia.html" class="hiddenIfScreenSmall hover-underline-animation">Explore Malaysia</a></li> <!-- !Talk about the cities/etc.-->
+					<li><a href="things-to-do.html" class="hiddenIfScreenSmall hover-underline-animation">Things to Do</a></li><!-- !Tells readers about activities to do in Malaysia-->
+					<li><span id="sideButton" style="font-size:30px;cursor:pointer;" onclick="openNav(event)">&#9776</span></li> <!-- !Opens the side navigation bar (for mobile or smaller screens) - gets access to more tabs e.g. about the website, epq references, another search bar, etc.-->
+				</ul>
+			</nav>
+		</header>
+		<!-- !End of MUST ADD CONTENT-->
+
+		<!-- ? Content of the page go here! -->
+		<!-- ? Can be either container-fluid (width=100%) or container (width to be 70-80%) for easier viewing.-->
+        <div class="container">
+            <main>
+                <!-- TODO Your code here  -->
+				<h1>ABOUT KUALA LUMPUR</h1>
+				<p>Malaysia's capital city is Kuala Lumpur. It is the commercial, cultural and transportation hub in Malaysia. Its name means "muddy estuary" in English. In 1857, a group of Chinese tin miners started the city of Kuala Lumpur at the confluence of the Klang and Gombak rivers. Over time, Kuala Lumpur developed as a tin mining location, even when the jungle was malaria-infested at that time. In 1880, it became the state capital. In 1895, it was picked as the capital of the Federated Malay States.<br><br>
+					After Malaysia got its independence, Kuala Lumpur urbanised swiftly, and in the early 21st century, the administrative capital was moved from Kuala Lumpur to Putrajaya, which is just south of Kuala Lumpur. Kuala Lumpur continued to be Malaysia’s capital city.
+				</p>
+				<hr>
+                <h1>PLACES TO GO</h1>
+                <h2>Petronas Twin Towers</h2>
+                <div class ="container px-4">
+                    <div class="row gx-3">
+                        <div class="col-3">
+                            <img src="images/esmonde-yong--9B08uduMyY-unsplash.jpg" style="width:100%;height:auto;"/>
+                        </div>
+                        <div class="col-9">
+                            <p>Petronas Twin Towers is the world's tallest twin tower at 452m (1,483ft). Each tower has 88 floors. Once the world's tallest tower upon its completion, it surpassed the Sears Tower in 1992. The Petronas Twin Towers are based on Islamic patterns designed by Argentinian architect Cesar Pelli. A sky bridge on floors 41 and 42 connects the two towers, and there is an observation deck near the top of the tower.
+                            </p>
+							<a href="https://www.petronastwintowers.com.my/"><strong><p>Click here for more information</p></strong></a>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <h2>Batu Caves</h2>
+                <div class ="container px-4">
+                    <div class="row gx-3">
+                        <div class="col-9">
+							<p>A Hindu temple built inside a cave. The temple honours the Hindu god, Lord Murugan. It is the place where the Thaipusam festival is held every year. To get to the temple, you have to climb 272 steps. Every day, people who worship there come to make offerings. Because Hindus care a lot about animals, they are free to roam around the temple. At the bottom of the stairs is the gold-covered statue of Lord Murugan, which is the tallest in the world.
+                            </p>
+                        </div>
+                        <div class="col-3">
+                            <img src="images/pexels-julia-lee-9908248 - unedited.jpg" style="width:100%;height:auto;"/>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <hr>
+				<h1>KUALA LUMPUR PUBLIC TRANSPORT INFORMATION</h1>
+				<div class ="container px-4">
+                    <div class="row gx-3">
+                        <p>There are many different modes of public transportation in Kuala Lumpur.</p>
+						<h2 style="text-align:left;">RapidKL (BUS)</h2>
+						<p>Bus services cover the greater Kuala Lumpur and the state of Selangor.</p>
+						<a href="https://myrapid.com.my/bus-train/rapid-kl/bus/"><strong><p>For bus information, click here</p></strong></a>
+						<br>
+						<h2 style="text-align:left;">MRT (Mass Rapid Transit)</h2>
+						<p>Consists of two lines: Kajang Line and Putrajaya Line</p>
+						<a href="https://myrapid.com.my/bus-train/rapid-kl/mrt-kajang-line/"><strong><p>Kajang Line information</p></strong></a>
+						<a href="https://myrapid.com.my/bus-train/rapid-kl/mrt-putrajaya-line/"><strong><p>Putrajaya Line information</p></strong></a>
+						<br>
+						<h2 style="text-align:left;">LRT (Light Rapid Transit)</h2>
+						<p>Consists of three lines: Kelana Jaya Line, Sri Petaling Line and Ampang Line</p>
+						<a href="https://myrapid.com.my/bus-train/rapid-kl/lrt/"><strong><p>Information about LRT</p></strong></a>
+						<br>
+						<h2 style="text-align:left;">KL Monorail</h2>
+						<p>Passes through the Kuala Lumpur city centre.</p>
+						<a href="https://myrapid.com.my/bus-train/rapid-kl/monorail/"><strong><p>Information about KL Monorail</p></strong></a>
+						<hr>
+						<h2>Kuala Lumpur Integrated Transit Map</h2>
+						<img src="images/Transit Map KL.png" style="width:100%;height: auto;"/>
+						<a href="https://myrapid.com.my/bus-train/rapid-kl/rapid-kl-integrated-transit-map/"><strong><p>Better version - Click here</p></strong></a>
+						<hr>
+						<h2>For more information about service status and to access the free journey planner: </h2>
+						<br>
+						<a href="https://myrapid.com.my/"><strong><h3 style="text-align:center;">Click here</h3></strong></a>
+                    </div>
+                </div>
+            </main>
+        </div> 
+		<script type="text/javascript" src="script.js" ></script> 
+    </body>
+</html>

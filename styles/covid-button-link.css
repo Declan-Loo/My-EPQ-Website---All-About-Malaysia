@@ -1,0 +1,14 @@
+.covid19Info {
+	margin: 0 auto;
+	background-color: #C6C6C6;
+	border-top-left-radius:2.5em;
+	border-top-right-radius:2.5em;
+	border-bottom-right-radius:2.5em;
+	border-bottom-left-radius:2.5em;
+    padding: 1em;
+    left: 10px;
+}
+
+.covid19Info h1{
+    font-weight: 600;
+}

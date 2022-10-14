@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<!-- !Head must be the same for all web pages in this project-->
+	<!-- Make sure to use this example for the website.-->
+    <head>
+        <title>All About Malaysia</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="menu.css"> <!-- To access the CSS for the navbar function -->
+		<link rel="stylesheet" href="normalize.css"> <!-- Normalize.css makes browsers render all elements more consistently and in line with modern standards. It precisely targets only the styles that need normalizing. (link: https://necolas.github.io/normalize.css/)-->
+        <link rel="stylesheet" href="button.css"> <!-- To access the CSS for the button function -->
+		<link href="https://css.gg/search.css" rel="stylesheet"> <!-- To access the CSS for the search icon -->
+    </head>
+	<!-- onclick closeNav allows the sidenav to be closed by clicking on other parts of the web page -->
+    <body>
+		<div id="container">
+			<!-- To access the sidebar menu on the top right of the page -->
+			<div id="navbar" class="sidenav" onclick="event.stopPropagation();"> <!-- The Menu Section-->
+				<!-- Button to close the sidebar navigation-->
+				<a href="javascript:void(0)" class="closebtn">&times;</a>
+				<div class = "sidenavContent">
+					<a href="about-this-website.html">About this Website</a>
+					<a href="about-malaysia.html">About Malaysia</a>
+					<a href="explore-malaysia.html">Explore Malaysia</a>
+					<a href="cities-and-places.html">Cities and Places</a>
+					<a href="search.html">Search</a>
+					<a href="epq-references.html">References</a>
+				</div>
+				<script type="text/javascript" src="sidenavbar.js" ></script>
+			</div>
+			<header>
+				<div id="mainheader">
+					<a href="#"><img src="ALL ABOUT MALAYSIA LOGO.png" alt="All About Malaysia" width="310px" height="155px"></a>
+					<nav>
+						<ul>
+							<li><a href="about-malaysia.html" class="hover-underline-animation">About Malaysia</a></li>
+							<li><a href="explore-malaysia.html" class="hover-underline-animation">Explore Malaysia</a></li>
+							<li><a href="cities-and-places.html" class="hover-underline-animation">Cities and Places</a></li>
+							<li><a href="search.html"><i class="gg-search"></i></a></li>
+							<li><span id="sidebutton" style="font-size:30px;cursor:pointer;" onclick="openNav(event)">&#9776</span></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+        </div>
+    </body>
+</html>

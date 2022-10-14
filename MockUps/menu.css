@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Dosis:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700;800;900&family=Josefin+Sans&family=League+Spartan:wght@600&family=Open+Sans:wght@300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Slab:wght@500&family=Source+Sans+Pro&family=Titillium+Web:wght@300;400;600;700&display=swap');
+
+h1{
+	font-family: Titillium Web;
+}
+.container{
+	width: 100%;
+}
+
+p{
+	font-family: Source Sans Pro;
+}
+
+header{
+	background-color: white; /*Make the background white*/
+	z-index: 50; /*Make the header  */
+	position: fixed; /*To make the header fixed, so it will stay when you scroll down the website*/
+	top: 0;
+	margin-top: 0px;
+	width: 100%;
+	vertical-align: middle;
+	height: 175px;
+}
+
+header #mainheader{
+	padding: 10px;
+}
+
+header nav{
+	width: 100%;
+	height: 101px;
+}
+header nav ul {
+	justify-content:flex-end;
+	display:flex;
+	align-items:center;
+	width: 100%;
+    list-style: none;
+	float: right;
+	vertical-align: middle;
+}
+
+header nav ul li {
+    margin: 20px;
+	float: left;
+    text-align: left;
+    font-size: 20px;
+	padding: 30px 20px;
+}
+
+header nav ul li a{
+	font-size: 20px;
+	font-family: Inter;
+	text-decoration: none;
+	font-weight: 600;
+	color: black;
+}
+
+header nav ul li:hover a{
+	color: #4B4A54;
+	text-decoration: none;
+	
+}
+
+/* From 30secondsofcode. Link: https://www.30secondsofcode.org/css/s/hover-underline-animation */
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #000000;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #4B4A54;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    z-index:1;
+    top:0px;
+    left:0px;
+    margin: none;
+    padding: none;
+}
+
+
+header nav{
+	float: right;
+    width: 70%;
+	text-align: right;
+	margin-right: 30px;
+}
+
+.sidenav{
+    position: fixed;
+    right: 0;
+    width: 0;
+    height: 100%;
+    z-index: 100;
+    top: 0;
+    overflow-x: hidden;
+	background: #000000;
+    transition: 0.5s;
+}
+
+/* Contents of the side navigation bar */
+.sidenavContent{
+    position: relative;
+	z-index: 100;
+    white-space: nowrap; /*Prevents the text from wrapping (responding) */
+    top: 10%;
+    width: 100%;
+    margin-top: 75px;
+    margin-left:75px;
+    margin-right:50px;
+    line-height: 400%;
+}
+
+/*Navigation menu links*/
+.sidenav a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 80px;
+    vertical-align: middle;
+}
+
+
+.sidenav .closebtn a:hover, .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 80px;
+    vertical-align: middle;
+}
+
+
+/*When the mouse hovers over the links, bold the fonts */
+.sidenav a:hover, .sidenav a:focus {
+    color: #999;
+    /*background-color: #686868*/
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav a {font-size: 20px}
+    .sidenav .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 978px) {
+    nav a {display: none;}
+}
+@media (min-width: 978px) and (max-width: 1120px) {
+	nav h2 {
+		font-size: 20px;
+	}
+}
+
+.sidebutton{
+    right: 0;
+	margin: 30px;
+}
+
+main{
+	margin-left:10px;
+	transition: margin-top .5s;
+	margin-top: 175px;
+}
+
+#carouselExampleIndicators {
+	width: 80%;
+	margin: 0 auto;
+}
+
+#carouselExampleIndicators h1{
+								font-size: 16vw;
+								vertical-align: middle;
+								font-family: Dancing Script;
+								color: white;
+								text-shadow: 5px 5px #000000;
+							}
+
+#carousel-caption d-none d-md-block{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+#covid19Info {
+	padding: 20px;
+	left: 10px;
+	width: 80%;
+	margin: 0 auto;
+	background-color: gray;
+	border-top-left-radius:40px;
+	border-top-right-radius:40px;
+	border-bottom-right-radius:40px;
+	border-bottom-left-radius:40px;
+}
+
+#covid19Info h1{
+    font-weight: 600;
+}
+
+
+
+iframe{
+	margin: 0 auto;
+	width: 80%;
+}
+

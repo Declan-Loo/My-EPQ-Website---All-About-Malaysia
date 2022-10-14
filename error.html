@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+	<!-- !Head must be the same for all web pages in this project-->
+	<!-- Make sure to use this example for the website.-->
+    <head>
+        <title>All About Malaysia</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- ! CSS styles go here-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"><!-- !To access the Bootstrap library for grid/layout system,etc.-->		
+        <link rel="stylesheet" href="styles/style.css"> <!--! To access the CSS for the stylesheet -->
+        <link rel="stylesheet" href="styles/menu.css"> <!-- ! To access the CSS for the menu function -->
+		<link rel="stylesheet" href="styles/normalize.css"> <!-- ! Normalize.css makes browsers render all elements more consistently and in line with modern standards. It precisely targets only the styles that need normalizing. (link: https://necolas.github.io/normalize.css/)-->
+        <link rel="stylesheet" href="styles/button.css"> <!-- !To access the CSS for the button function -->
+		<link rel="stylesheet" href="styles/slideshow.css"> <!-- !To access the CSS for the slideshow function -->
+		<link rel="stylesheet" href="styles/covid-button-link.css"> <!-- !To access the CSS for the slideshow function -->
+		<link rel="stylesheet" href="styles/searchButton.css"> <!-- !To access the CSS for the search button function -->
+		<link rel="stylesheet" href="styles/search.css"> <!-- !To access the CSS for the search box (in the side navigation menu) -->
+		<link href="https://css.gg/search.css" rel="stylesheet"> <!-- !To access the CSS for the search icon -->
+
+        <!-- !Favicon icon (icon at the top of the page) -->
+		<link rel="icon" href="favicon.ico" sizes="any" type="image/x-icon">
+        
+        <style>
+            /* From uiverse.io */
+            button {
+            position: relative;
+            border: none;
+            background: transparent;
+            padding: 0;
+            cursor: pointer;
+            outline-offset: 4px;
+            transition: filter 250ms;
+            user-select: none;
+            touch-action: manipulation;
+            text-decoration: none;
+            }
+
+            .shadow {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+            background: hsl(0deg 0% 0% / 0.25);
+            will-change: transform;
+            transform: translateY(2px);
+            transition: transform
+                600ms
+                cubic-bezier(.3, .7, .4, 1);
+            }
+
+            .edge {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+            background: linear-gradient(
+                to left,
+                hsl(340deg 100% 16%) 0%,
+                hsl(340deg 100% 32%) 8%,
+                hsl(340deg 100% 32%) 92%,
+                hsl(340deg 100% 16%) 100%
+            );
+            }
+
+            .front {
+            display: block;
+            position: relative;
+            padding: 12px 27px;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            color: white;
+            background: hsl(345deg 100% 47%);
+            will-change: transform;
+            transform: translateY(-4px);
+            transition: transform
+                600ms
+                cubic-bezier(.3, .7, .4, 1);
+            }
+
+            button:hover {
+            filter: brightness(110%);
+            text-decoration: none;
+            }
+
+            button:hover .front {
+            transform: translateY(-6px);
+            transition: transform
+                250ms
+                cubic-bezier(.3, .7, .4, 1.5);
+            }
+
+            button:active .front {
+            transform: translateY(-2px);
+            transition: transform 34ms;
+            }
+
+            button:hover .shadow {
+            transform: translateY(4px);
+            transition: transform
+                250ms
+                cubic-bezier(.3, .7, .4, 1.5);
+            }
+
+            button:active .shadow {
+            transform: translateY(1px);
+            transition: transform 34ms;
+            }
+
+            button:focus:not(:focus-visible) {
+            outline: none;
+            }
+        </style>
+    </head>
+    <body>
+		<!-- ? Content of the page go here! -->
+		<!-- ? Can be either container-fluid (width=100%) or container (width to be 70-80%) for easier viewing.-->
+        <div class="container" style="text-align:center;">
+            <main>
+                <!-- TODO Your code here  -->
+                <h1 style="font-size:100px;">404</h1>
+                <h1>Page Not Found</h1>
+                <button>
+                    <span class="shadow"></span>
+                    <span class="edge"></span>
+                    <a href="index.html"><span class="front text">Return to Home</span></a>
+                </button>
+            </main>
+        </div> 
+		<script type="text/javascript" src="script.js" ></script> 
+    </body>
+</html>

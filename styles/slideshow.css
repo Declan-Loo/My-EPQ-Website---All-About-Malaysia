@@ -1,0 +1,24 @@
+#carouselExampleIndicators {
+	width: 100%;
+	margin: 0 auto;
+}
+
+#carouselExampleIndicators h1{
+	font-size: 16vw;
+	vertical-align: middle;
+	font-family: Dancing Script;
+	color: white;
+	text-shadow: 5px 5px #000000;
+}
+
+#carousel-caption d-none d-md-block{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+#carousel-item img {
+	height: 1000px;
+}
+
+

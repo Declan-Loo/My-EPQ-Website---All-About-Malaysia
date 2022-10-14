@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+	<!-- !Head must be the same for all web pages in this project-->
+	<!-- Make sure to use this example for the website.-->
+    <head>
+        <title>Penang - All About Malaysia</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- ! CSS styles go here-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"><!-- !To access the Bootstrap library for grid/layout system,etc.-->
+        <link rel="stylesheet" href="styles/style.css"> <!--! To access the CSS for the stylesheet -->
+        <link rel="stylesheet" href="styles/menu.css"> <!-- ! To access the CSS for the menu function -->
+		<link rel="stylesheet" href="styles/normalize.css"> <!-- ! Normalize.css makes browsers render all elements more consistently and in line with modern standards. It precisely targets only the styles that need normalizing. (link: https://necolas.github.io/normalize.css/)-->
+        <link rel="stylesheet" href="styles/button.css"> <!-- !To access the CSS for the button function -->
+		<link rel="stylesheet" href="styles/searchButton.css"> <!-- !To access the CSS for the search button function -->
+		<link rel="stylesheet" href="styles/search.css"> <!-- !To access the CSS for the search box (in the side navigation menu) -->
+		<link href="https://css.gg/search.css" rel="stylesheet"> <!-- !To access the CSS for the search icon -->
+
+		<!-- !Favicon icon (icon at the top of the page) -->
+		<link rel="icon" href="favicon.ico" sizes="any" type="image/x-icon">
+
+    </head>
+    <body>
+		<!-- !To access the sidebar menu on the top right of the page -->
+		<div id="navbar" class="sidenav" onclick="event.stopPropagation();"> <!-- The Menu Section-->
+			<!-- !Button to close the sidebar navigation-->
+			<a href="javascript:void(0)" class="closeButton" onclick="closeNav();">&times;</a>
+			<div class = "sidenavContent">
+				<a href="about-this-website.html">About this Website</a> <!-- !Introduce the website to readers-->
+				<a href="about-malaysia.html">About Malaysia</a> <!-- !Tells readers about what Malaysia is, and how it is unique to other countries around the world-->
+				<a href="explore-malaysia.html">Explore Malaysia</a> <!-- !Talk about the cities/etc.-->
+				<a href="things-to-do.html">Things to Do</a> <!-- !Tells readers about activities to do in Malaysia-->
+				
+				<!-- !Search Button, so people can input anything they want from the side navigation menu-->
+				<div class="input-group">
+					<form action="search.html" method="get">
+						<input required="" type="text" name="text" autocomplete="off" class="input">
+						<label class="user-label">Search Here</label>
+					</form>
+				</div>
+				<a href="epq-references.html">References</a> <!-- !Put the cited information (completely in Harvard style), as reference to show evidence of research on my website project/information-->
+			</div>
+			<script type="text/javascript" src="script.js" ></script> <!-- !Link the Javascript file into the website-->
+		</div>
+
+		<!-- !For the navigation bar at the top of the page-->
+		<header>
+			<a href="index.html"><img src="images/ALL ABOUT MALAYSIA LOGO.png" alt="All About Malaysia"></a> <!-- !All ABOUT MALAYSIA LOGO-->
+			<!-- * HTML Navigation (the navigation bar) contents-->
+			<nav>
+				<ul>
+					<li><a href="about-malaysia.html" class="hiddenIfScreenSmall hover-underline-animation" >About Malaysia</a></li> <!-- !Tells readers about what Malaysia is, and how it is unique to other countries around the world-->
+					<li><a href="explore-malaysia.html" class="hiddenIfScreenSmall hover-underline-animation">Explore Malaysia</a></li> <!-- !Talk about the cities/etc.-->
+					<li><a href="things-to-do.html" class="hiddenIfScreenSmall hover-underline-animation">Things to Do</a></li><!-- !Tells readers about activities to do in Malaysia-->
+					<li><span id="sideButton" style="font-size:30px;cursor:pointer;" onclick="openNav(event)">&#9776</span></li> <!-- !Opens the side navigation bar (for mobile or smaller screens) - gets access to more tabs e.g. about the website, epq references, another search bar, etc.-->
+				</ul>
+			</nav>
+		</header>
+		<!-- !End of MUST ADD CONTENT-->
+
+		<!-- ? Content of the page go here! -->
+		<!-- ? Can be either container-fluid (width=100%) or container (width to be 70-80%) for easier viewing.-->
+        <div class="container">
+            <main>
+                <!-- TODO Your code here  -->
+                <h1>ABOUT PENANG</h1>
+                <p>Penang is known as the Malaysian Food Capital. Penang is one of the best places to visit in Malaysia. Penang is located in northwest Peninsular Malaysia. It is an island along the Straits of Malacca, connected to the mainland by two bridges. Penang itself is also a state, but the state includes the island and the regions of the mainland known as Seberang Perai. It is known for having a rich historical and cultural status. It was designated as a UNESCO World Heritage Site in 2008, along with Melaka. Around Penang, many hawker stalls sell tasty and cheap street food of various cuisines. Its architectural style is usually of a Chinese shophouse, even though its architecture is diverse.<br><br>
+                    Penang was founded in 1786 by Captain Francis Light and was developed into a British trading hub. It soon overtook Malacca due to its free trade status, and it was quickly directly ruled by the British alongside Malacca and Singapore as the Strait Settlements in 1826. 
+                </p>
+                <hr>
+                <h1>PLACES TO GO</h1>
+                <h2>Batu Ferringhi</h2>
+                <div class ="container px-4">
+                    <div class="row gx-3">
+                        <div class="col-12">
+                            <p>Batu Ferringhi means “Ferringhi’s Rock” in English. A beachfront with many hotel resorts built to accommodate tourists, with direct access to the beach. There is a night market which tourists mainly visit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <h2>Cheong Fatt Tze Mansion</h2>
+                <div class ="container px-4">
+                    <div class="row gx-3">
+                        <div class="col-3">
+                            <img src="images/800px-Cheong_Fatt_Tze_Mansion_(I).jpg" style="width:100%;height:auto;"/>
+                            <br>
+                        </div>
+                        <div class="col-9">
+                            <p>Cheong Fatt Tze constructed the mansion in the late 19th century, using the best materials worldwide. It is built in the style of traditional Chinese architecture because he wanted to show how beautiful that style is. He used the mansion to manage his business. When he died in 1916, the house fell apart. This resulted in restoration work in the mansion, which took six years and wasn't finished until 1995. Traditional Chinese methods were used to fix up the mansion so that its history would not be lost. It is still a well-known building in Penang, and it has been fixed up and turned into a boutique hotel. It is currently open to the public.
+                            </p>
+                            <a href="https://www.cheongfatttzemansion.com/"><strong><p>Click here for more information</p></strong></a>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <h2>Penang Street Art</h2>
+                <div class ="container px-4">
+                    <div class="row gx-3">
+                        <div class="col-9">
+                            <p>A picture perfect location for tourists to visit. It was mainly the work of Lithuanian artist Ernest Zacharevic who designed the street art around George Town.</p>
+                        </div>
+                        <div class="col-3">
+                            <img src="images/yaopey-yong-s6HogbQTeNE-unsplash.jpg" alt="Street Art" style="width: 100%; height:auto;"/>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <h2>Penang Hill (Bukit Bendara)</h2>
+                <div class ="container px-4">
+                    <div class="row gx-3">
+                        <div class="col-3">
+                            <img src="images/fidelia-zheng-wlyiPNaTobo-unsplash.jpg" alt="Penang Hill" style="width: 100%; height:auto;">
+                        </div>
+                        <div class="col-9">
+                            <p>The highest point in Penang with a height of 852 metres above sea level. People can reach it via a funicular railway which goes up the hill to the top. At the top, you can experience scenic views of Penang. </p>
+                            <br>
+                            <a href="https://www.penanghill.gov.my/index.php/en/"><strong><p>Click here for more information</p></strong></a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <h1>PENANG PUBLIC TRANSPORT INFORMATION</h1>
+                <a href="https://myrapid.com.my/bus-train/rapid-penang/rapid-pg-bus/"><strong><h2>Here is information about public transportation in Penang</h2></strong></a>
+                <hr>
+                <h2>More information about Penang: <a href="https://mypenang.gov.my/?lg=en/">Click here</a></h2>
+                <br>
+            </main>
+        </div> 
+		<script type="text/javascript" src="script.js" ></script> 
+    </body>
+</html>

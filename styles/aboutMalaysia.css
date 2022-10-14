@@ -1,0 +1,25 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.d-flex h2{
+    text-decoration: none;
+    color: black;
+    font-family: Dancing Script;
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+.d-flex h2:hover{
+    color: #4B4A54;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+a{
+    text-decoration: none;
+}
+
+.bg-light{
+    background-color: #939393;
+}

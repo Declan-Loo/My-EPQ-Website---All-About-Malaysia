@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Dosis:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700;800;900&family=Josefin+Sans&family=League+Spartan:wght@600&family=Open+Sans:wght@300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Slab:wght@500&family=Source+Sans+Pro&family=Titillium+Web:wght@300;400;600;700&display=swap');
+
+header{
+	background-color: white; /*Make the background white*/
+	z-index: 50; /*Make the header  */
+	position: fixed; /*To make the header fixed, so it will stay when you scroll down the website*/
+	top: 0;
+	margin-top: 0px;
+	width: 100%;
+	height: auto;
+	padding: 1em;
+	align-items:center;
+    
+}
+header nav{
+	display: flex;
+	float: right;
+    width: calc(100% - 430px);
+	height: auto;
+	text-align: right;
+	margin-right: 30px;
+	
+
+}
+header nav ul {
+	padding: 0;
+	margin: 0;
+	height: auto;
+	justify-content:flex-end;
+	display:flex;
+	align-items:center;
+	width: 100%;
+    list-style: none;
+}
+
+header nav ul li {
+	display: flex;
+    margin: 20px;
+	float: left;
+    text-align: left;
+    font-size: 20px;
+	padding: 10px 20px;
+}
+
+header nav ul li a{
+    
+	font-size: 20px;
+	font-family: Inter;
+	text-decoration: none;
+	font-weight: 600;
+	color: black;
+}
+
+header nav ul li:hover a{
+	color: #4B4A54;
+	text-decoration: none;
+	transition: 0.2s;
+	
+}
+
+header nav ul li i{
+	justify-content: center;
+	align-content: center;
+}
+
+header img{
+    max-width: 400px;
+	width: min(50vw, 400px);
+    height: auto;
+}
+
+/* ! From 30secondsofcode. Link: https://www.30secondsofcode.org/css/s/hover-underline-animation */
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #000000;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #4B4A54;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.sidenav{
+    position: fixed;
+    right: 0;
+    width: 0;
+    height: 100%;
+    z-index: 100;
+    top: 0;
+    overflow-x: hidden;
+	background: #000000;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+/* Contents of the side navigation bar */
+.sidenavContent{
+    position: relative;
+	z-index: 100;
+    white-space: nowrap; /*Prevents the text from wrapping (responding) */
+    top: 10%;
+    width: 100%;
+    margin-top: 75px;
+    margin-left:75px;
+    margin-right:50px;
+    line-height: 400%;
+}
+
+/*Navigation menu links*/
+.sidenav a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 2em;
+    color: #fff;
+    font-weight: 300;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav .closeButton {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 80px;
+    vertical-align: middle;
+}
+
+
+.sidenav .closeButton a:hover, .closeButton {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 80px;
+    vertical-align: middle;
+}
+
+
+/*When the mouse hovers over the links, bold the fonts */
+.sidenav a:hover, .sidenav a:focus {
+    color: #999;
+    /*background-color: #686868*/
+}
+
+.googleMap {
+    position: relative;
+    padding-bottom: 75%; 
+    height: 0;
+    overflow: hidden;
+}
+.googleMap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav a {
+        font-size: 20px;
+    }
+
+    .user-label {
+        font-size: 20px;
+    }
+    .sidenav .closeButton {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media (max-width: 1100px) {
+    .hiddenIfScreenSmall{
+        display: none;
+    }
+}
+@media (min-width: 978px) and (max-width: 1120px) {
+	nav h2 {
+		font-size: 1.25em;
+	}
+}

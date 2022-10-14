@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+	<!-- !Head must be the same for all web pages in this project-->
+	<!-- Make sure to use this example for the website.-->
+    <head>
+        <title>About Malaysia - All About Malaysia</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- ! CSS styles go here-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"><!-- !To access the Bootstrap library for grid/layout system,etc.-->
+		<link rel="stylesheet" href="styles/style.css"> <!--! To access the CSS for the stylesheet -->
+        <link rel="stylesheet" href="styles/menu.css"> <!-- ! To access the CSS for the menu function -->
+		<link rel="stylesheet" href="styles/normalize.css"> <!-- ! Normalize.css makes browsers render all elements more consistently and in line with modern standards. It precisely targets only the styles that need normalizing. (link: https://necolas.github.io/normalize.css/)-->
+        <link rel="stylesheet" href="styles/button.css"> <!-- !To access the CSS for the button function -->
+		<link rel="stylesheet" href="styles/slideshow.css"> <!-- !To access the CSS for the slideshow function -->
+		<link rel="stylesheet" href="styles/covid-button-link.css"> <!-- !To access the CSS for the slideshow function -->
+		<link rel="stylesheet" href="styles/searchButton.css"> <!-- !To access the CSS for the search button function -->
+		<link rel="stylesheet" href="styles/search.css"> <!-- !To access the CSS for the search box (in the side navigation menu) -->
+		<link rel="stylesheet" href="styles/aboutMalaysia.css"> <!-- !To access the CSS for the about malaysia page (specific elements only) -->
+		<link href="https://css.gg/search.css" rel="stylesheet"> <!-- !To access the CSS for the search icon -->
+
+		<!-- !Favicon icon (icon at the top of the page) -->
+		<link rel="icon" href="favicon.ico" sizes="any" type="image/x-icon">
+    </head>
+	<body>
+		<!-- !To access the sidebar menu on the top right of the page -->
+		<div id="navbar" class="sidenav" onclick="event.stopPropagation();"> <!-- The Menu Section-->
+			<!-- !Button to close the sidebar navigation-->
+			<a href="javascript:void(0)" class="closeButton" onclick="closeNav();">&times;</a>
+			<div class = "sidenavContent">
+				<a href="about-this-website.html">About this Website</a> <!-- !Introduce the website to readers-->
+				<a href="about-malaysia.html">About Malaysia</a> <!-- !Tells readers about what Malaysia is, and how it is unique to other countries around the world-->
+				<a href="explore-malaysia.html">Explore Malaysia</a> <!-- !Talk about the cities/etc.-->
+				<a href="things-to-do.html">Things to Do</a> <!-- !Tells readers about activities to do in Malaysia-->
+				
+				<!-- !Search Button, so people can input anything they want from the side navigation menu-->
+				<div class="input-group">
+					<form action="search.html" method="get">
+						<input required="" type="text" name="text" autocomplete="off" class="input">
+						<label class="user-label">Search Here</label>
+					</form>
+				</div>
+				<a href="epq-references.html">References</a> <!-- !Put the cited information (completely in Harvard style), as reference to show evidence of research on my website project/information-->
+			</div>
+			<script type="text/javascript" src="sidenavbar.js" ></script> <!-- !Link the Javascript file into the website-->
+		</div>
+
+		<!-- !For the navigation bar at the top of the page-->
+		<header>
+			<a href="index.html"><img src="images/ALL ABOUT MALAYSIA LOGO.png" alt="All About Malaysia"></a> <!-- !All ABOUT MALAYSIA LOGO-->
+			<!-- * HTML Navigation (the navigation bar) contents-->
+			<nav>
+				<ul>
+					<li><a href="about-malaysia.html" class="hiddenIfScreenSmall hover-underline-animation" >About Malaysia</a></li> <!-- !Tells readers about what Malaysia is, and how it is unique to other countries around the world-->
+					<li><a href="explore-malaysia.html" class="hiddenIfScreenSmall hover-underline-animation">Explore Malaysia</a></li> <!-- !Talk about the cities/etc.-->
+					<li><a href="things-to-do.html" class="hiddenIfScreenSmall hover-underline-animation">Things to Do</a></li><!-- !Tells readers about activities to do in Malaysia-->
+					<li><span id="sideButton" style="font-size:30px;cursor:pointer;" onclick="openNav(event)">&#9776</span></li> <!-- !Opens the side navigation bar (for mobile or smaller screens) - gets access to more tabs e.g. about the website, epq references, another search bar, etc.-->
+				</ul>
+			</nav>
+		</header>
+		<!-- !End of MUST ADD CONTENT-->
+		<!-- ? About Malaysia section -->
+        <div class="container">
+            <main>
+				<div class="d-flex justify-content-center">
+					<div class="container px-4">
+						<div class="row g-5">
+							<div class="col-4 mx-auto">
+								<a href="#factFile" style="text-decoration: none;"><div class="p-3 border bg-light"><h2>FACTFILE</h2></div></a>
+							</div>
+							<div class="col-4 mx-auto">
+								<a href="#aboutMalaysia" style="text-decoration: none;"><div class="p-3 border bg-light"><h2>ABOUT MALAYSIA</h1></div></a>
+							</div>
+							<div class="col-4 mx-auto">
+								<a href="#funFacts" style="text-decoration: none;"><div class="p-3 border bg-light"><h2>FUN FACTS</h2></div></a>
+							</div>
+							<div class="col-4 mx-auto">
+								<a href="#cuisine" style="text-decoration: none;"><div class="p-3 border bg-light"><h2>CUISINE</h2></div></a>
+							</div>
+							<div class="col-4 mx-auto">
+								<a href="#culture" style="text-decoration: none;"><div class="p-3 border bg-light"><h2>CULTURE</h1></div></a>
+							</div>
+							<div class="col-4 mx-auto">
+								<a href="#briefHistory" style="text-decoration: none;"><div class="p-3 border bg-light"><h2>BRIEF HISTORY</h2></div></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<br>
+				<div class="malaysiaFactfile">
+					<h1>QUICK INFORMATION ABOUT MALAYSIA</h1>
+					<div class="container">
+						<div class="col-sm">
+							<!-- *Table that allows user to hover over its contents via mouse.-->
+							<table class="table table-hover" id="factFile">
+								<thead>
+									<tr>
+										<th colspan="2"><h2>Factfile:</h2></th>
+									</tr>
+									</thead>
+									<tbody>
+									<tr>
+										<th scope="row">Flag</th>
+										<td><img src="images/Flag_of_Malaysia.svg.png" alt="Flag of Malaysia - Jalur Gembilang" style="max-width:50%"></img></td>
+									</tr>
+									<tr>
+										<th scope="row">Form of Government</th>
+										<td>Constitutional monarchy</td>
+									</tr>
+									<tr>
+										<th scope="row">Capital City</th>
+										<td>Putrajaya (adminstrative) <br>Kuala Lumpur (federal)</td>
+									</tr>
+									<tr>
+										<th scope="row">Population</th>
+										<td>32.7 million (2021) <br>32.6 million (2020)</td>
+									</tr>
+									<tr>
+										<th scope="row">Language</th>
+										<td>Bahasa Melayu, English, Mandarin, Tamil</td>
+									</tr>
+									<tr>
+										<th scope="row">Currency</th>
+										<td>Ringgit Malaysia (MYR/RM)- <a href="https://www.xe.com/currencyconverter/convert/?Amount=1&From=USD&To=MYR">Click here for current exchange rate!</a></td>
+									</tr>
+									<tr>
+										<th scope="row">Independence Day</th>
+										<td>31st August (gained independence from the British in 1957)</td>
+									</tr>
+									<tr>
+										<th scope="row">Monarch (Yang di-Pertuan Agong)</th>
+										<td>Abdullah of Pahang</td>
+									</tr>
+									<tr>
+										<th scope="row">Prime Minister</th>
+										<td>Ismail Sabri Yaakob</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="aboutMalaysia" id="aboutMalaysia">
+					<br>
+					<hr>
+					<h1>ABOUT MALAYSIA</h1>
+					<p>Malaysia is a Southeast Asian country just north of the equator. It has two regions: Peninsular Malaysia, also called West Malaysia, and East Malaysia, which is on the north side of Borneo and is separated by the South China Sea. Its capital is Kuala Lumpur, and its administrative capital is in Putrajaya. Malaysia has 13 states: Johor, Kedah, Kelantan, Melaka, Negeri Sembilan, Pahang, Penang, Perak, Perlis, Sabah, Sarawak, Selangor, Terengganu, and three Federal Territories: Kuala Lumpur, Putrajaya, and Labuan (in east Malaysia). The only states in East Malaysia are Sabah, Sarawak, and Labuan, and the rest are in Peninsular Malaysia. Malaysia was a British colony in the past. On September 16, 1963, Sabah, Sarawak, and Singapore joined to form the Federation of Malaysia. But in 1965, Singapore was kicked out of the federation.<br><br>
+						Peninsular Malaysia has land borders to the north with Thailand and to the south with Singapore. It also shares a border with Sumatra in Indonesia, across the Straits of Malacca to the west. In the south, East Malaysia has a land border with Brunei and Indonesia (Kalimantan).<br><br>
+						Malaysia has a tropical climate, with daily temperatures ranging from 23 to 32 degrees Celsius. Malaysia is also known for its rainforests, which are full of an abundance of different types of flora.
+						</p>
+				</div>
+				<br>
+				<div class="funFact" id="funFacts">
+					<br>
+					<hr>
+					<h1>FUN FACTS</h1>
+					<ul>
+						<li><p>Malaysia is a <strong>constitutional monarchy</strong>, which means that the King, officially called the Yang di-Pertuan Agong, is the Supreme Head of the Federation of Malaysia. The fascinating thing is that that a Conference of Rulers elects the Yang di-Pertuan Agong every five years. The rulers of the nine Malay states and the four governors of other states without a ruler make up the Conference of Rulers. Each ruler will take turns to be the Yang di-Pertuan Agong on a rotating basis. In the meantime, if necessary, the Conference of Rulers can dismiss the Yang di-Pertuan Agong. It is the only place in the world with a system like this.
+						</p></li>
+						<li><p>Malaysia is located close to the equator. It has an <strong>equatorial</strong> climate, and Malaysia is home to rainforests.</p></li>
+						<li><p>The tallest twin tower, <strong>the Petronas Twin Towers</strong>, is located in Kuala Lumpur, Malaysia. It was once the tallest skyscraper in the world, with a height of 452 metres ( feet). As of today, it is still the tallest twin tower in the world.</p></li>
+					</ul>
+				</div>
+				
+				<div class="malaysiaCuisine" id="cuisine">
+					<br>
+					<hr>
+					<h1>CUISINE</h1>
+					<p>In Malaysia, we have a variety of cuisines ranging from <strong>Chinese, Indian</strong> and <strong>Malay cuisine.</strong></p>
+					<br>
+					<hr>
+					<h2 style="text-align:left;">MALAY</h2>
+					<div class ="container px-4">
+						<div class="row gx-3">
+							<div class="col-3">
+								<img src="images/nasi-lemak.jpg" alt="Nasi Lemak" style="width: 100%; height:auto;"/>
+								<br>
+								<p>(Nasi Lemak)</p>
+							</div>
+							<div class="col-9">
+								<p>You can try <strong>nasi lemak</strong>, considered by many to be the national dish of Malaysia. There are also many delicious Malay cuisine such as: <br> apam balik, nasi kerabu, ayam percik, rendang, kuih, nasi kandar, and asam pedas, pisang goreng (banana fritters), ketupat, otak-otak, putu piring, satay and rojak.</p>
+							</div>
+						</div>
+					</div>
+					<br>
+					<hr>
+					<h2 style="text-align:right;">CHINESE</h2>
+					<div class ="container px-4">
+						<div class="row gx-3">
+							<div class="col-9">
+								<p>There are also many delicious Chinese food found in Malaysia. Examples are: <br>char kueh teow, laksa, chai tow kuay, wonton mee, mee rebus, lor bak, kaya toast (for breakfast), popiah (spring roll)</p>
+							</div>
+							<div class="col-3">
+								<img src="images/amanda-lim-xvAaSlU-zpM-unsplash.jpg" alt="Laksa" style="width: 100%; height:auto;"/>
+								<br>
+								<p>(Laksa)</p>
+							</div>
+						</div>
+					</div>
+					<br>
+					<hr>
+					<h2 style="text-align:left;">INDIAN</h2>
+					<div class ="container px-4">
+						<div class="row gx-3">
+							<div class="col-9">
+								<p>Indian food is also popular in Malaysia. You can eat: <br>roti canai, roti john, murtabak</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="malaysiaCulture" id="culture">
+					<br>
+					<hr>
+					<h1>CULTURE</h1>
+					<p>Malaysia is a multi-cultural and multi-racial nation, and Malaysians celebrate many festivals among the population annually. The official religion of Malaysia is <strong>Islam</strong>. Any Malaysian is free to practice their religion, as stated by the Federal Constitution of Malaysia. According to the Department of Statistics in Malaysia, the estimated percentage of citizen population by ethnic group in 2021 is 69.8% Malay, 22.4% Chinese, 6.8% Indian, and 1.0% others.
+					</p>
+				</div>
+				<div class="malaysiaBriefHistory" id="briefHistory">
+					<br>
+					<hr>
+					<h1>BRIEF HISTORY</h1>
+					<p>In 1400 AD, the Sultanate of Malacca founded Malacca (now Melaka) near the Straits of Malacca. Malacca's strategic position at the eastern end of Indian Ocean trade routes attracted traders from far. Spices and silks passed through Malacca on their way to their destination. The Sultanate ruled Peninsular Malaysia's east coast and west Sumatra.<br><br>
+						European powers colonised Malaya (Peninsular Malaysia) for its gold and tin resources. Portugal invaded Malacca in 1511. Under their leadership, Malacca declined. Soon, the Sultanate of Aceh (located in North Sumatra) threatened it. The Dutch East Indies Company attacked and seized Malacca in 1641.<br><br>
+						In 1786, the British East India Company constructed Penang, which overtook Malacca as a trade port. Sir Stamford Raffles created Singapore in 1819. Its location at the southern end of the Straits of Malacca made it a major commercial port. The Anglo-Dutch Treaty gave the British Malacca in 1824. Britain colonised Sabah and North Borneo (Sabah). Meanwhile, the sultanates controlled the nine other regions in Malaya.<br><br>
+						In 1824, the British governed Penang, Singapore, and Malacca as part of the Strait Settlements. The nine sultanates were indirectly governed, therefore their sultans continued to reign while being affected by British culture. During this time, Chinese immigrants landed in Malaya, founded Kuala Lumpur and Ipoh. Chinese and British tin miners flocked to Malaya.<br><br>
+						Between 1941-1945, the Japanese Army invaded Malaya, Borneo and Singapore. After the war, they would be restored to British authority, and self-governance was soon introduced in Malaya. The British soon formed the Malayan Union. Malay nationalists led by UMNO  (United Malays National Organisation) party opposed the formation. This led to the founding of the Federation of Malaya in 1948. The Communist Party of Malaya wanted to overthrow the colonial authority and control Malaya. However, the British repressed the Communist Party's endeavours.<br><br>
+						On August 31, 1957, Malaya gained independence from the British. Tunku Abdul Rahman's Alliance Party ruled Malaya. Singapore, North Borneo, and Sarawak won independence. North Borneo was renamed Sabah when it joined Malaya to become Malaysia on 16 September 1963. 1965 would see Singapore's expulsion.
+					</p>
+				</div>
+				<br>
+            </main>
+        </div> 
+		<script type="text/javascript" src="script.js" ></script>
+    </body>
+</html>
