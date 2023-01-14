@@ -4,4 +4,9 @@ Hi! This is my website as part of my submission for the AQA Extended Project for
 
 I hope you enjoy seeing the code and do let me know what to add in the future so I can improve my coding skills, and to see what other ideas I could have implemented in my website instead.
 
+LINK TO THE WEBSITE: https://declanloo.netlify.app/
+
+Screenshot of my website
+![image](https://user-images.githubusercontent.com/41332340/212466988-37176291-8e84-4bee-a825-1077fa5c89d5.png)
+
 - Declan Loo (mightywern)
